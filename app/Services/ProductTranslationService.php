@@ -8,12 +8,12 @@ use DeepL\DeepLClient as DeepLClient;
 
 class ProductTranslationService
 {
-    public function translate(string $description): ?string
+    public function translate(string $description, string $language): ?string
     {
         $authKey = env('DEELP_API_KEY');
         $deeplClient = new DeepLClient($authKey);
 
-        $result = $deeplClient->translateText($description, null, 'nl');
+        $result = $deeplClient->translateText($description, null, $language);
         return $result->text;
     }
 }

@@ -12,15 +12,17 @@ class Translation extends Component
     public $original;
     public $translated;
 
-    public function mount($productId = 51)
-    {
-        $this->productId = $productId;
-        $this->translateProduct();
-    }
-
     public function translateProduct()
     {
-        $product = Product::findOrFail($this->productId);
+        $this->original = null;
+        $this->translated = null;
+
+        $product = Product::find($this->productId);
+
+        if (!$product) {
+            $this->addError('productId', 'Product not found.');
+            return;
+        }
 
         $this->original = $product->description;
 
