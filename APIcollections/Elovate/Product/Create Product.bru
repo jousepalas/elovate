@@ -1,0 +1,26 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8000/api/products
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Product A",
+    "title": "title A",
+    "description": "Description product A",
+    "translations": "Translation product A",
+    "sku": "123456",
+    "price": "19.99"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
