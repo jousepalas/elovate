@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'v12.4.0',
-        'version' => '12.4.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'db3c2bd64ee24fd3d283c9bfc3085e6c5c8e198c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -39,6 +39,15 @@
             'replaced' => array(
                 0 => '*',
             ),
+        ),
+        'deeplcom/deepl-php' => array(
+            'pretty_version' => 'v1.12.0',
+            'version' => '1.12.0.0',
+            'reference' => 'b9a7e0385d27a99b7756ebf95e953785b90e8161',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../deeplcom/deepl-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'dflydev/dot-access-data' => array(
             'pretty_version' => 'v3.0.3',
@@ -392,9 +401,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'v12.4.0',
-            'version' => '12.4.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'db3c2bd64ee24fd3d283c9bfc3085e6c5c8e198c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -622,6 +631,36 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+        'php-http/async-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '*',
+            ),
+        ),
+        'php-http/client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '*',
+            ),
+        ),
+        'php-http/discovery' => array(
+            'pretty_version' => '1.20.0',
+            'version' => '1.20.0.0',
+            'reference' => '82fe4c73ef3363caed49ff8dd1539ba06044910d',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/../php-http/discovery',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'php-http/multipart-stream-builder' => array(
+            'pretty_version' => '1.4.2',
+            'version' => '1.4.2.0',
+            'reference' => '10086e6de6f53489cca5ecc45b6f468604d3460e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-http/multipart-stream-builder',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'phpoption/phpoption' => array(
             'pretty_version' => '1.9.4',
             'version' => '1.9.4.0',
@@ -742,7 +781,8 @@
         'psr/http-client-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
+                0 => '*',
+                1 => '1.0',
             ),
         ),
         'psr/http-factory' => array(
@@ -757,7 +797,8 @@
         'psr/http-factory-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
+                0 => '*',
+                1 => '1.0',
             ),
         ),
         'psr/http-message' => array(
@@ -772,7 +813,8 @@
         'psr/http-message-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
+                0 => '*',
+                1 => '1.0',
             ),
         ),
         'psr/log' => array(
